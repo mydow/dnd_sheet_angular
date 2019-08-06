@@ -1,0 +1,14 @@
+<div ng-controller="formCtrl">
+    <form novalidate>
+        Player Name: <input type="text" ng-model="char.playername" placeholder="Your Name"><br>
+        Character Name: <input type="text" ng-model="char.charactername" placeholder="Character Name"><br>
+        Strength: <input type="text" ng-model="char.strength"><span ng-click="add('strength')">&plus;</span><span ng-click="remove('strength')">&minus;</span><br>
+        Dexterity: <input type="text" ng-model="char.dexterity"><span ng-click="add('dexterity')">&plus;</span><span ng-click="remove('dexterity')">&minus;</span><br>
+        Constitution: <input type="text" ng-model="char.constitution"><span ng-click="add('constitution')">&plus;</span><span ng-click="remove('constitution')">&minus;</span><br>
+        Intelligence: <input type="text" ng-model="char.intelligence"><span ng-click="add('intelligence')">&plus;</span><span ng-click="remove('intelligence')">&minus;</span><br>
+        Wisdom: <input type="text" ng-model="char.wisdom"><span ng-click="add('wisdom')">&plus;</span><span ng-click="remove('wisdom')">&minus;</span><br>
+        Charisma: <input type="text" ng-model="char.charisma"><span ng-click="add('charisma')">&plus;</span><span ng-click="remove('charisma')">&minus;</span><br><br>
+        <button ng-click="reset()">Reset Form</button>
+        
+    </form>
+</div>
