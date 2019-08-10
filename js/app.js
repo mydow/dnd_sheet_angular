@@ -4,8 +4,10 @@ var app = angular.module('charSheet',["ngRoute"]);
 // this does not work without running it on a webserver!!
 app.config(function($routeProvider){
     $routeProvider
-        .when("/",{templateUrl: "main.html"})
-        .when("/stat",{templeteUrl: "stat.html"});
+        .when("/",{templateUrl: "index.html"})
+        .when("/main",{templeteUrl: "main.html"})
+        .when("/stat",{templeteUrl: "stat.html",
+        controller: "formCtrl"});
 });
 // end
 
